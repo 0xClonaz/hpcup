@@ -1,4 +1,4 @@
-const apiUrl = '/.netlify/functions/points';
+const apiUrl = 'https://hpteszt.netlify.app';
 let currentToken = '';
 
 async function getPoints() {
