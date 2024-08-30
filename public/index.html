@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter House Points</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">Get Points for Your House!</h1>
+
+        <div class="houses">
+            <div class="house gryffindor">
+                <h1>Gryffindor</h1>
+                <button onclick="addPoint('gryffindor')">1 Point to Gryffindor!</button>
+                <div id="gryffindor-points">Points: 0</div>
+            </div>
+            <div class="house hufflepuff">
+                <h1>Hufflepuff</h1>
+                <button onclick="addPoint('hufflepuff')">1 Point to Hufflepuff!</button>
+                <div id="hufflepuff-points">Points: 0</div>
+            </div>
+            <div class="house ravenclaw">
+                <h1>Ravenclaw</h1>
+                <button onclick="addPoint('ravenclaw')">1 Point to Ravenclaw!</button>
+                <div id="ravenclaw-points">Points: 0</div>
+            </div>
+            <div class="house slytherin">
+                <h1>Slytherin</h1>
+                <button onclick="addPoint('slytherin')">1 Point to Slytherin!</button>
+                <div id="slytherin-points">Points: 0</div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div id="gryffindor-segment" class="progress-segment gryffindor">
+            </div>
+            <div id="hufflepuff-segment" class="progress-segment hufflepuff">
+            </div>
+            <div id="ravenclaw-segment" class="progress-segment ravenclaw">
+            </div>
+            <div id="slytherin-segment" class="progress-segment slytherin">
+            </div>
+        </div>
+
+            Made with ❤️💛💙💚 by 0xTomFlow ---- Version 1.0 (Next update chat system)<br>
+            Follow me on Twitter at <a href="https://twitter.com/0xtomflow" target="_blank">@0xtomflow</a>
+        
+        <div class="coffee">
+            Buy me a butterbeer, or help me with university. :)<br>
+            <a href="https://www.buymeacoffee.com/tomflow">
+                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a butterbeer&emoji=🍺&slug=tomflow&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff" />
+            </a>
+        </div>
+
+        <div class="visitors">
+            Visitors in the last 24 hours: <span id="visitor-count"></span>
+        </div>
+
+        <div class="contact">
+            Contact email: <a href="mailto:0xtramadol@proton.me">0xtramadol@proton.me</a> or Twitter <a href="https://twitter.com/0xtomflow" target="_blank">@0xtomflow</a>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

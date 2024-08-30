@@ -1,0 +1,210 @@
+/* Basic Reset and Background Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Garamond', serif;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(135deg, #9b2626, #dfb94a, #002A5D, #2D6A4F);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Harry P', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Container */
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* House Containers */
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative; 
+  z-index: 2;
+}
+
+.house {
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.house.gryffindor {
+  background: #9b2626;
+}
+
+.house.hufflepuff {
+  background: #dfb94a;
+}
+
+.house.ravenclaw {
+  background: #002A5D;
+}
+
+.house.slytherin {
+  background: #2D6A4F;
+}
+
+.house:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.house h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-family: 'Harry P', sans-serif;
+}
+
+.house button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.house button:hover {
+  background: #ddd;
+}
+
+/* Points Display */
+.house div {
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  background: #333;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.progress-segment {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: width 0.5s ease;
+}
+
+.progress-segment.gryffindor { background: #9b2626; }
+.progress-segment.hufflepuff { background: #dfb94a; }
+.progress-segment.ravenclaw { background: #002A5D; }
+.progress-segment.slytherin { background: #2D6A4F; }
+
+.house.button.gryffindor { background: #9b2626; }
+.progress-segment.hufflepuff { background: #dfb94a; }
+.progress-segment.ravenclaw { background: #002A5D; }
+.progress-segment.slytherin { background: #2D6A4F; }
+
+#gryffindor-percent,
+#hufflepuff-percent,
+#ravenclaw-percent,
+#slytherin-percent {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Footer Text */
+p {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  z-index: 2;
+}
+
+/* Buy Me a Butterbeer */
+.coffee {
+  margin-top: 10px;
+  font-size: 1.1em;
+  z-index: 2;
+}
+
+.coffee img {
+  margin-top: 10px;
+}
+
+/* Visitors */
+.visitors {
+  font-size: 1.2em;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+/* Contact */
+.contact {
+  font-size: 1.2em;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ddd;
+}
+
+/* Magical Background */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
