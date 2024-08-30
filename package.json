@@ -1,0 +1,10 @@
+{
+  "name": "hp-house-points",
+  "version": "1.0.0",
+  "description": "Harry Potter House Points Web App",
+  "scripts": {
+    "build": "echo 'No build step required for static site'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
