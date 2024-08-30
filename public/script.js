@@ -1,4 +1,4 @@
-const apiUrl = 'https://66d10f2e845bc5d02ad3bffd--luxury-tiramisu-0ebaa2.netlify.app';
+const apiUrl = 'https://hpcup.vercel.app';
 let currentToken = '';
 
 async function fetchVisitorCount() {
