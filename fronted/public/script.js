@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3000';
+const apiUrl = 'https://hpcup-git-main-0xalprazs-projects.vercel.app';
 let currentToken = '';
 
 // Fetch and display points
